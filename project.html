@@ -1,0 +1,105 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<header class="header">
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="index.html#about-section">About</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><a href="CV.pdf" download>Download CV</a></li>
+    </ul>
+  </nav>
+</header>
+<link rel="stylesheet" href="css/project.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<section class="section" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project">
+    <h3>Oceanic Delights: Fish Recommendation System</h3>
+    <div class="video-wrapper" data-src="https://drive.google.com/file/d/1shjVmSDle9x24LHWVldLlQLA9TlvCq5l/preview"
+      style="width:600px; height:400px; background: url('thumbnails/oceanic.png') center/cover no-repeat; cursor:pointer; border-radius:8px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); margin: 15px 0;">
+      <div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <button style="font-size: 40px; background: rgba(0,0,0,0.5); border:none; color:#fff; border-radius:50%; width:70px; height:70px; cursor:pointer;">▶</button>
+      </div>
+    </div>
+    <p>Hybrid recommendation system built with PHP and JavaScript.</p>
+  </div>
+
+  <div class="project">
+    <h3>Game TopUP</h3>
+    <div class="video-wrapper" data-src="https://drive.google.com/file/d/1shjVmSDle9x24LHWVldLlQLA9TlvCq5l/preview"
+      style="width:600px; height:400px; background: url('thumbnails/TopUp.png') center/cover no-repeat; cursor:pointer; border-radius:8px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); margin: 15px 0;">
+      <div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <button style="font-size: 40px; background: rgba(0,0,0,0.5); border:none; color:#fff; border-radius:50%; width:70px; height:70px; cursor:pointer;">▶</button>
+      </div>
+    </div>
+    <p>Simple website using PHP and JavaScript.</p>
+  </div>
+
+  <div class="project">
+    <h3>Gender classification</h3>
+    <div class="video-wrapper" data-src="https://drive.google.com/file/d/18PbLHTltXjIxEf6Z-Q_G0QXMVDiU3t2X/preview"
+      style="width:600px; height:400px; background: url('thumbnails/gender_classification.png') center/cover no-repeat; cursor:pointer; border-radius:8px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); margin: 15px 0;">
+      <div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <button style="font-size: 40px; background: rgba(0,0,0,0.5); border:none; color:#fff; border-radius:50%; width:70px; height:70px; cursor:pointer;">▶</button>
+      </div>
+    </div>
+    <p>Predict user gender (male or female) using machine learning in Python.</p>
+  </div>
+
+  <div class="project">
+    <h3>Furniture</h3>
+    <div class="video-wrapper" data-src="https://drive.google.com/file/d/1otK5v_cUpQu6Ni1ctquWSWMYDqk4eT2z/preview"
+      style="width:600px; height:400px; background: url('thumbnails/furniture.png') center/cover no-repeat; cursor:pointer; border-radius:8px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); margin: 15px 0;">
+      <div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <button style="font-size: 40px; background: rgba(0,0,0,0.5); border:none; color:#fff; border-radius:50%; width:70px; height:70px; cursor:pointer;">▶</button>
+      </div>
+    </div>
+    <p>Using WordPress to create a customized eCommerce website.</p>
+  </div>
+
+  <div class="project">
+    <h3>Personal purchase record</h3>
+    <div class="video-wrapper" data-src="https://drive.google.com/file/d/1yI-XYOppHb-kqNvjHnV3qmjAvZ09uglK/preview"
+      style="width:600px; height:400px; background: url('thumbnails/purchase_record.png') center/cover no-repeat; cursor:pointer; border-radius:8px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); margin: 15px 0;">
+      <div style="width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <button style="font-size: 40px; background: rgba(0,0,0,0.5); border:none; color:#fff; border-radius:50%; width:70px; height:70px; cursor:pointer;">▶</button>
+      </div>
+    </div>
+    <p>uses shorting system to arange accordingly </p>
+  </div>
+</section>
+<div class="back-home">
+  <a href="#projects" aria-label="Back to top">&#8593;</a>
+</div>
+<footer id="footer">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rsm9841@gmail.com" target="_blank" rel="noopener noreferrer">rsm9841@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/rajjwol-singh/" target="_blank"
+        rel="noopener noreferrer">linkedin.com/in/rajjwol-singh</a></p>
+    <p>GitHub: <a href="https://github.com/Rajjwol" target="_blank" rel="noopener noreferrer">github.com/Rajjwol</a></p>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    wrapper.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = wrapper.dataset.src;
+      iframe.width = '600';
+      iframe.height = '400';
+      iframe.allow = 'autoplay; fullscreen';
+      iframe.allowFullscreen = true;
+      iframe.style.border = 'none';
+      wrapper.innerHTML = '';
+      wrapper.appendChild(iframe);
+    });
+  });
+</script>
+</html>
