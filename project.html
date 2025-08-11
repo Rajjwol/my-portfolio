@@ -12,6 +12,11 @@
       <li><a href="#footer">Contact</a></li>
       <li><a href="CV.pdf" download>Download CV</a></li>
     </ul>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 </header>
 <link rel="stylesheet" href="css/project.css" />
@@ -103,3 +108,13 @@
   });
 </script>
 </html>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.querySelector('.nav-list');
+
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+
+</script>

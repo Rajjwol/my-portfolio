@@ -1,122 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="#about-section">About</a></li>
-      <li><a href="#footer">Contact</a></li>
-      <li><a href="CV.pdf" download>Download CV</a></li>
-    </ul>
-  </nav>
-</header>
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rajjwol Singh Portfolio</title>
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Hero Section with Background Image -->
-  <section id= "hero" class="hero" style="background-image: url('image/hero_bg.jpg');">
-    <div class="overlay">
-      <h2>Hi, I'm Rajjwol Singh Maharjan</h2>
-      <p>Aspiring Software Developer | Passionate about Web & Software Development</p>
-      <a href="project.html" class="button">View My Projects</a>
-      <a href="CV.pdf" class="button">Download CV</a>
-    </div>
-  </section>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a href="CV.pdf" download>Download CV</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-  <!-- About Section -->
-  <section id="about-section" class="section about-section">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="image/profile.jpg" alt="Profile Picture">
-      <p>
-        I'm an enthusiastic developer with a strong focus on web technologies and backend development.
-        Skilled in PHP, JavaScript, Python, and MySQL, I'm also diving into Java and .NET to expand my tech stack.
-        I enjoy solving real-world problems with code and am actively seeking internships, freelance projects,
-        or entry-level software developer roles where I can contribute and continue learning.
-      </p>
-    </div>
-  </section>
-<!-- Skills Section -->
-<!-- Skills Section -->
-<section class="section skills-section">
-  <h2>Skills</h2>
-  <div class="skills-grid">
+  <body>
+    <!-- Hero Section with Background Image -->
+    <section id="hero" class="hero" style="background-image: url('image/hero_bg.jpg');">
+      <div class="overlay">
+        <h2>Hi, I'm Rajjwol Singh Maharjan</h2>
+        <p>Aspiring Software Developer | Passionate about Web & Software Development</p>
+        <a href="project.html" class="button">View My Projects</a>
+        <a href="CV.pdf" class="button">Download CV</a>
+      </div>
+    </section>
 
-    <!-- Languages -->
-    <div class="skill-item">
-      <h3><i class="fas fa-code"></i> Languages</h3>
-      <p>
-        <span class="programming"><i class="fab fa-php"></i> PHP</span>
-        <span class="programming"><i class="fab fa-js"></i> JavaScript</span>
-        <span class="programming"><i class="fab fa-python"></i> Python</span>
-        <span class="programming"><i class="fas fa-database"></i> MySQL</span>
-        <span class="programming"><i class="fab fa-java"></i> Java (Learning)</span>
-        <span class="programming"><i class="fas fa-code"></i> .NET (Learning)</span>
-      </p>
-    </div>
+    <!-- About Section -->
+    <section id="about-section" class="section about-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="image/profile.jpg" alt="Profile Picture">
+        <p>
+          I'm an enthusiastic developer with a strong focus on web technologies and backend development.
+          Skilled in PHP, JavaScript, Python, and MySQL, I'm also diving into Java and .NET to expand my tech stack.
+          I enjoy solving real-world problems with code and am actively seeking internships, freelance projects,
+          or entry-level software developer roles where I can contribute and continue learning.
+        </p>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section class="section skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
 
-    <!-- Tools -->
-    <div class="skill-item">
-      <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-      <p>
-        <span class="programming"><i class="fab fa-git-alt"></i> Git</span>
-        <span class="programming"><i class="fab fa-github"></i> GitHub</span>
-        <span class="programming"><i class="fas fa-laptop-code"></i> Visual Studio</span>
-        <span class="programming"><i class="fas fa-code-branch"></i> VS Code</span>
-      </p>
-    </div>
+        <!-- Languages -->
+        <div class="skill-item">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <p>
+            <span class="programming"><i class="fab fa-php"></i> PHP</span>
+            <span class="programming"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="programming"><i class="fab fa-python"></i> Python</span>
+            <span class="programming"><i class="fas fa-database"></i> MySQL</span>
+            <span class="programming"><i class="fab fa-java"></i> Java (Learning)</span>
+            <span class="programming"><i class="fas fa-code"></i> .NET (Learning)</span>
+          </p>
+        </div>
 
-    <!-- Soft Skills -->
-    <div class="skill-item">
-      <h3><i class="fas fa-user-friends"></i> Soft Skills</h3>
+        <!-- Tools -->
+        <div class="skill-item">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <p>
+            <span class="programming"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="programming"><i class="fab fa-github"></i> GitHub</span>
+            <span class="programming"><i class="fas fa-laptop-code"></i> Visual Studio</span>
+            <span class="programming"><i class="fas fa-code-branch"></i> VS Code</span>
+          </p>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-item">
+          <h3><i class="fas fa-user-friends"></i> Soft Skills</h3>
+          <p>
+            <span class="programming"><i class="fas fa-lightbulb"></i> Problem-Solving</span>
+            <span class="programming"><i class="fas fa-users"></i> Team Collaboration</span>
+            <span class="programming"><i class="fas fa-sync-alt"></i> Adaptability</span>
+            <span class="programming"><i class="fas fa-graduation-cap"></i> Continuous Learning</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <!-- Call to Action -->
+    <section class="section call-to-action">
+      <h2>Actively Seeking Opportunities</h2>
       <p>
-        <span class="programming"><i class="fas fa-lightbulb"></i> Problem-Solving</span>
-        <span class="programming"><i class="fas fa-users"></i> Team Collaboration</span>
-        <span class="programming"><i class="fas fa-sync-alt"></i> Adaptability</span>
-        <span class="programming"><i class="fas fa-graduation-cap"></i> Continuous Learning</span>
+        I am currently searching for internships, freelance projects, or entry-level software developer roles where I
+        can
+        contribute my skills and grow professionally.
+        If you're looking for a passionate and eager-to-learn developer, let's connect!
       </p>
-    </div>
+      <a href="mailto:rsm9841@gmail.com" class="button">Hire Me</a>
+      <a href="#footer" class="button">Contact Me</a>
+    </section>
+  </body>
+  <div class="back-home">
+    <a href="#hero" aria-label="Back to top">&#8593;</a>
   </div>
-</section>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-  <!-- Call to Action -->
-  <section class="section call-to-action">
-    <h2>Actively Seeking Opportunities</h2>
-    <p>
-      I am currently searching for internships, freelance projects, or entry-level software developer roles where I can
-      contribute my skills and grow professionally.
-      If you're looking for a passionate and eager-to-learn developer, let's connect!
-    </p>
-    <a href="mailto:rsm9841@gmail.com" class="button">Hire Me</a>
-    <a href="#footer" class="button">Contact Me</a>
-  </section>
+  <footer id="footer">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:rsm9841@gmail.com" target="_blank" rel="noopener noreferrer">rsm9841@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rajjwol-singh/" target="_blank"
+          rel="noopener noreferrer">linkedin.com/in/rajjwol-singh</a></p>
+      <p>GitHub: <a href="https://github.com/Rajjwol" target="_blank" rel="noopener noreferrer">github.com/Rajjwol</a>
+      </p>
+    </div>
+  </footer>
 </body>
-<div class="back-home">
-  <a href="#hero" aria-label="Back to top">&#8593;</a>
-</div>
-<footer id="footer">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rsm9841@gmail.com" target="_blank" rel="noopener noreferrer">rsm9841@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/rajjwol-singh/" target="_blank"
-        rel="noopener noreferrer">linkedin.com/in/rajjwol-singh</a></p>
-    <p>GitHub: <a href="https://github.com/Rajjwol" target="_blank" rel="noopener noreferrer">github.com/Rajjwol</a></p>
-  </div>
-</footer>
 
 </html>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.querySelector('.nav-list');
+
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+
+</script>
