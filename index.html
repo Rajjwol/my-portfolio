@@ -567,7 +567,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     <!-- Project 1 -->
-                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow">
+                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow" data-category="fullstack">
                         <div class="aspect-video relative overflow-hidden bg-surface-container-highest">
                             <img src="thumbnails/oceanic.png"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
@@ -582,7 +582,7 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow">
+                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow"data-category="fullstack">
                         <div class="aspect-video overflow-hidden">
                             <img src="thumbnails/TopUp.png"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
@@ -597,7 +597,7 @@
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow">
+                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow" data-category="ml">
                         <div class="aspect-video overflow-hidden">
                             <img src="thumbnails/gender_classification.png"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
@@ -751,6 +751,20 @@
             });
         });
     </script>
+    <script>
+function filterProjects(category) {
+    const projects = document.querySelectorAll('.glass-panel');
+
+    projects.forEach(p => {
+        if (category === 'all') {
+            p.style.display = 'block';
+        } else {
+            p.style.display =
+                p.dataset.category === category ? 'block' : 'none';
+        }
+    });
+}
+</script>
 </body>
 
 </html>
