@@ -1,150 +1,756 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="dark" lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rajjwol Singh Portfolio</title>
-  <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rajjwol Singh Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#00201a",
+                        "surface-container-highest": "#353534",
+                        "surface-variant": "#353534",
+                        "surface-tint": "#44ddc1",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-on-surface": "#313030",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-surface-variant": "#bbcac4",
+                        "primary": "#44ddc1",
+                        "outline-variant": "#3c4a46",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-secondary": "#303030",
+                        "primary-fixed": "#68fadd",
+                        "on-error-container": "#ffdad6",
+                        "background": "#131313",
+                        "surface-container": "#201f1f",
+                        "surface": "#131313",
+                        "on-tertiary-container": "#3e3e3e",
+                        "on-primary-container": "#00473c",
+                        "primary-container": "#00bfa5",
+                        "primary-fixed-dim": "#44ddc1",
+                        "outline": "#85948f",
+                        "on-primary-fixed-variant": "#005145",
+                        "on-secondary-container": "#b7b5b4",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "tertiary-fixed": "#e4e2e1",
+                        "inverse-primary": "#006b5c",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed": "#1b1b1c",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#303030",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#474746",
+                        "secondary": "#c8c6c5",
+                        "on-primary": "#00382f",
+                        "tertiary": "#c8c6c6",
+                        "surface-bright": "#393939",
+                        "tertiary-container": "#aba9a9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "section-gap": "160px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-md": [
+                            "Geist"
+                        ],
+                        "headline-xl": [
+                            "Geist"
+                        ],
+                        "headline-lg": [
+                            "Geist"
+                        ],
+                        "headline-md": [
+                            "Geist"
+                        ],
+                        "body-lg": [
+                            "Geist"
+                        ],
+                        "headline-lg-mobile": [
+                            "Geist"
+                        ],
+                        "body-md": [
+                            "Geist"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-md": [
+                            "14px",
+                            {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "headline-xl": [
+                            "72px",
+                            {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.04em",
+                                "fontWeight": "800"
+                            }
+                        ],
+                        "headline-lg": [
+                            "48px",
+                            {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-md": [
+                            "32px",
+                            {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "36px",
+                            {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: theme('colors.on-background');
+            font-family: 'Geist', sans-serif;
+            overflow-x: hidden;
+        }
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
+
+        .doodle-pattern-dense {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 5c3-3 7-3 10 0s3 7 0 10-7 3-10 0-3-7 0-10zm20 20c3-3 7-3 10 0s3 7 0 10-7 3-10 0-3-7 0-10zm20 20c3-3 7-3 10 0s3 7 0 10-7 3-10 0-3-7 0-10z' fill='none' stroke='%233c4a46' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' opacity='0.3'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+
+            /* Animations */
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            .animate-float {
+                animation: float 4s ease-in-out infinite;
+            }
+
+            .animate-float-delayed {
+                animation: float 4s ease-in-out 2s infinite;
+            }
+
+            .animate-float-random-1 {
+                animation: float 3.5s ease-in-out 0.5s infinite;
+            }
+
+            .animate-float-random-2 {
+                animation: float 4.5s ease-in-out 1s infinite;
+            }
+
+            .animate-float-random-3 {
+                animation: float 3.8s ease-in-out 1.5s infinite;
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .fade-in-up {
+                opacity: 0;
+            }
+
+            .fade-in-up.is-visible {
+                animation: fadeInUp 0.8s ease-out forwards;
+            }
+
+            @keyframes pulse-subtle {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                    box-shadow: 0 0 0 rgba(0, 191, 165, 0);
+                }
+
+                50% {
+                    transform: scale(1.02);
+                    box-shadow: 0 0 10px rgba(0, 191, 165, 0.3);
+                }
+            }
+
+            .animate-pulse-subtle {
+                animation: pulse-subtle 3s infinite;
+            }
+
+            .hover-card-glow {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .hover-card-glow:hover {
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 0 15px rgba(0, 191, 165, 0.4);
+            }
+
+            .shimmer-btn {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .shimmer-btn::after {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -100%;
+                width: 50%;
+                height: 200%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+                transform: rotate(30deg);
+                transition: all 0.5s ease;
+            }
+
+            .shimmer-btn:hover::after {
+                left: 150%;
+            }
+        }
+
+        /* Utility */
+        .glass-panel {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid theme('colors.outline-variant');
+        }
+    </style>
 </head>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#footer">Contact</a></li>
-        <li><a href="RajjwolSinghCV.pdf" download>Download CV</a></li>
-      </ul>
-      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+<body class="antialiased">
+    <!-- Background Pattern -->
+    <!-- <div class="doodle-pattern fixed w-full h-full"></div> -->
+    <!-- Top Navigation Bar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-background/20 backdrop-blur-[15px] dark:bg-background/20 border-b border-outline-variant/30 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto left-0 right-0">
+        <a class="font-headline-md text-headline-md font-bold italic text-on-surface dark:text-on-surface hover:text-primary transition-all duration-300 scale-95 active:scale-90"
+            href="#about">Rajjwol Singh Maharjan</a>
+        <div class="hidden md:flex gap-6 items-center">
+            <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:text-primary transition-all duration-300"
+                href="#about">About Me</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:text-primary transition-all duration-300"
+                href="#works">Projects</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:text-primary transition-all duration-300"
+                href="#contact">Contact</a>
+        </div>
+        <button onclick="window.location.href='mailto:youremail@gmail.com?subject=Hiring%20Inquiry'"
+            class="hidden md:flex items-center justify-center bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:bg-primary transition-colors shimmer-btn">
+            Hire me
+        </button>
+        <!-- Mobile Menu Icon (Simplified for structure) -->
+        <button class="md:hidden text-on-surface">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
     </nav>
-  </header>
+    <main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-32 pb-24">
+        <!-- Hero Section -->
+        <section
+            class="min-h-[819px] flex flex-col md:flex-row items-center justify-between gap-12 py-section-gap relative">
+            <!-- <img alt="Floating Doodles" class="absolute top-10 -left-10 w-[400px] opacity-15 animate-float-random-1 pointer-events-none z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYquq1NulmtDzk5XUJ_WQeWeA_1w0zSw2pyt1iPJJirl5p5nyMQ-IFCKSbg3ulESdNh0VLyxW9YnlBkZn3PdX3dVnglZWLHmeoapdugOij678ojSwGyOyXq7JZcY57xrauzi4mRu1XBDDDig21QjEovUtD9BQ0VmZ4q68AeA6Iq0iT5skt8xZ1xvmXtL8I_N3S-q_Xt1TVH8DTzYB4_mKpBdmjz8OkqsXMr8R9DJQZK9yBYtYoz6t4-N03HL8TWQjfNMGoOvGLJVlp"/> -->
+            <div class="flex-1 space-y-6 fade-in-up z-10 scroll-section">
+                <div class="relative inline-block">
+                    <h1 class="font-headline-xl text-headline-xl text-on-surface">
+                        CRAFTING SYSTEMS<br />WITH <span class="text-primary-container relative inline-block">SOUL
+                            <!-- Decorative doodle underline -->
+                            <svg class="absolute -bottom-2 left-0 w-full h-4 text-primary-container"
+                                preserveaspectratio="none" viewbox="0 0 100 20">
+                                <path d="M0 10 Q 25 20, 50 10 T 100 10" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-width="3"></path>
+                            </svg>
+                        </span>
+                    </h1>
+                </div>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    I don't just write code; I architect digital foundations that move the world. <span
+                        class="text-primary-container">Rajjwol Singh Maharjan</span>, a full-stack developer obsessed
+                    with complete, end-to-end systems and flawless user
+                    experiences.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container px-8 py-3 rounded-full font-label-md text-label-md hover:bg-primary transition-all duration-300 hover:scale-105 animate-pulse-subtle shimmer-btn"
+                        href="#contact">
+                        Hire me
+                    </a>
+                    <a class="inline-flex items-center justify-center border-2 border-outline-variant text-on-surface px-8 py-3 rounded-full font-label-md text-label-md hover:border-primary-container hover:text-primary-container transition-all duration-300"
+                        href="RajjwolSinghCV.pdf">
+                        Download CV <span class="material-symbols-outlined ml-2 text-[18px]">download</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 relative fade-in-up scroll-section" style="animation-delay: 0.2s;">
+                <!-- Decorative Abstract shapes representing a developer at a desk -->
+                <div class="relative w-full max-w-md mx-auto aspect-square"
+                    style="background-image: url('img/doodles%20mixed%20round.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                    <img alt="Developer at desk illustration"
+                        class="w-full h-full object-contain rounded-2xl z-10 relative drop-shadow-2xl"
+                        data-alt="A stylized, flat illustration of a developer working at a desk in a dark, minimalist environment."
+                        src="./img/Group 2346.png" />
+                    <!-- https://lh3.googleusercontent.com/aida-public/AB6AXuAVwVsseJwV9QFPqMI6q1YNN4Wiku9w_2VOOd4ccPSXtGalc6wYlE4DZmuzoy_CyOoRPJG5_tV0KYCLljZn1KJ7-VPlZQ5FUw93G72i00gK7Cna0gBnBp_rLKvledRHqtMarfLtWI-N5cRyMHV68_7PSgMaHVZvqiWdYiAGiFFtN7vYxaxfRK7GEvKURnnlXGtunA9_fswhyUjgqzWnRsZ1gDokGUF4hIdodlx0TrYbxkBxceNwbL420xL5X07_6fVEnAEM9OjjpRjV -->
+                    <!-- Floating doodle elements -->
+                    <div class="absolute -top-10 -right-10 text-primary-container animate-float-random-1">
+                        <span class="material-symbols-outlined text-6xl">code_blocks</span>
+                    </div>
+                    <div class="absolute top-1/4 -left-12 text-primary-container animate-float-random-2">
+                        <span class="material-symbols-outlined text-5xl">music_note</span>
+                    </div>
+                    <div class="absolute bottom-10 -right-5 text-outline animate-float-random-3">
+                        <span class="material-symbols-outlined text-4xl">coffee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section class="py-section-gap relative fade-in-up scroll-section" id="about">
+            <img alt="Floating Doodles"
+                class="absolute top-20 right-0 w-[400px] opacity-15 animate-float-delayed pointer-events-none z-0"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp8q0Q9hw6wA0vmPIccEMQxezCBKomQy0ujWplPAC1Y1Kbj8sZi2QFsSl4X_M3ykhiqIk_MTz0lRHyxqegTXbXIW_rC_ECHpAUiIll5MOOaWl0OBpzXp_p2KAsRPeVWAxRs-4IwA4jw7QIwPbt-BsZxB7LRYXx4fq0viUGSBODgbQ4pL2Jj0ti_str9IljIz1dSGaOEIvLcCwOSzdqmGuyZuI8WvgSmtyFZdObseVeK1hFPsJ5nRCcQboJ0iM1B7Tt5z8Qt0lzqP0c" />
+            <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-16 relative z-10">
+                <div class="flex-1 space-y-6">
+                    <h2
+                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface flex items-center gap-4">
+                        About <span class="text-primary-container">me</span>
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Behind the screen lies a passion for bridging the gap between complex logic and intuitive
+                        design.
+                        I believe that true full-stack architecture isn't just about connecting a database to an
+                        interface. it's
+                        about building cohesive, elegant systems where the backend power flawlessly enhances the user
+                        journey.
+                    </p>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Whether I'm optimizing complex APIs or crafting pixel-perfect, responsive interfaces, my focus
+                        remains
+                        on creating robust, end-to-end applications that are as beautiful on the outside as they are
+                        scalable on the inside.
+                    </p>
+                    <a class="inline-block font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors underline decoration-primary-container decoration-2 underline-offset-4 pt-4"
+                        href="#contact">Read more</a>
+                </div>
+                <div class="flex-1 w-full max-w-md">
+                    <div class="relative aspect-square  p-8 flex items-center justify-center">
+                        <img alt="Developer thinking"
+                            class="w-full h-full object-cover rounded-xl opacity-70 mix-blend-luminosity"
+                            data-alt="A stylized illustration of a thoughtful developer resting in a chair, contemplating complex code architecture. The scene is set in a dark mode environment with subtle glowing accents. Surrounding the figure are intricate hand-drawn doodle patterns representing tech concepts like servers, databases, and network nodes, drawn in a thin, glowing teal line style."
+                            src="./image/profile.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Arsenal (Skills) Section -->
+        <section class="py-section-gap fade-in-up scroll-section relative z-10">
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-center mb-16 text-on-surface">
+                My <span class="text-primary-container">Craft</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-surface-container rounded-2xl p-8 border border-outline-variant/50 hover:border-primary-container/50 transition-colors group relative overflow-hidden hover-card-glow">
+                    <div
+                        class="absolute inset-0 bg-primary-container/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-surface mb-6 relative z-10 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-container">terminal</span> Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-3 relative z-10">
 
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="fa-brands fa-php"></i>
+                            PHP
+                        </span>
 
-  <!-- Hero Section with Background Image -->
-  <section id="hero" class="hero" style="background-image: url('image/hero_bg.jpg');">
-    <div class="overlay">
-      <h2>Rajjwol Singh Maharjan</h2>
-      <p>Aspiring Software Developer | Passionate about Web & Software Development</p>
-      <a href="project.html" class="button">View My Projects</a>
-      <a href="RajjwolSinghCV.pdf" class="button">Download CV</a>
-    </div>
-  </section>
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="fa-brands fa-python"></i>
+                            Python
+                        </span>
 
-  <!-- About Section -->
-  <section id="about-section" class="section about-section">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="image/profile.jpg" alt="Profile Picture">
-      <p>
-        Backend-focused Software Developer experienced in PHP, MySQL, JavaScript, and ASP.NET Core. Built full-stack
-        eCommerce and hybrid recommendation systems with JWT authentication and payment integration. Strong in backend
-        architecture, algorithm implementation, and real-world system development. Currently expanding into .NET and
-        Android (Kotlin + MVVM).
-      </p>
-    </div>
-  </section>
-  <!-- Skills Section -->
-  <!-- Skills Section -->
-  <section class="section skills-section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="fa-brands fa-js"></i>
+                            JavaScript
+                        </span>
 
-      <!-- Languages -->
-      <div class="skill-item">
-        <h3><i class="fas fa-code"></i> Languages</h3>
-        <p>
-          <span class="programming"><i class="fab fa-php"></i> PHP</span>
-          <span class="programming"><i class="fab fa-js"></i> JavaScript</span>
-          <span class="programming"><i class="fab fa-python"></i> Python</span>
-          <span class="programming"><i class="devicon-kotlin-plain colored"></i> Kotlin (Learning)</span>
-          <span class="programming"><i class="fas fa-database"></i> MySQL</span>
-          <span class="programming"><i class="fab fa-java"></i> Java </span>
-          <span class="programming"><i class="devicon-csharp-plain colored"></i> C#</span>
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Kotlin
+                        </span>
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="fa-solid fa-hashtag"></i>
+                            C#
+                        </span>
+
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-surface-container rounded-2xl p-8 border border-outline-variant/50 hover:border-primary-container/50 transition-colors group relative overflow-hidden hover-card-glow">
+                    <div
+                        class="absolute inset-0 bg-primary-container/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-surface mb-6 relative z-10 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-container">build</span> Tools &amp;
+                        Platforms
+                    </h3>
+                    <div class="flex flex-wrap gap-3 relative z-10">
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="devicon-git-plain"></i>
+                            Git
+                        </span>
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="devicon-vscode-plain"></i>
+                            VS Code
+                        </span>
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="devicon-androidstudio-plain"></i>
+                            Android Studio
+                        </span>
+
+                        <span
+                            class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md border border-outline-variant flex items-center gap-2">
+                            <i class="devicon-visualstudio-plain"></i>
+                            Visual Studio
+                        </span>
+
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-surface-container rounded-2xl p-8 border border-outline-variant/50 hover:border-primary-container/50 transition-colors group relative overflow-hidden md:col-span-2 lg:col-span-1 hover-card-glow">
+                    <div
+                        class="absolute inset-0 bg-primary-container/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <h3
+                        class="font-headline-md text-headline-md text-on-surface mb-6 relative z-10 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary-container">favorite</span> Soft Skills
+                    </h3>
+                    <div class="flex flex-col gap-4 relative z-10">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-outline">architecture</span>
+                            <span class="font-body-md text-body-md text-on-surface-variant">System Architecture
+                                Vision</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-outline">psychology</span>
+                            <span class="font-body-md text-body-md text-on-surface-variant">Complex Problem
+                                Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Works Section -->
+        <section class="py-section-gap relative fade-in-up scroll-section doodle-pattern-dense" id="works">
+            <div class="absolute inset-0 bg-background/80 backdrop-blur-sm z-0"></div>
+            <div class="relative z-10">
+                <div class="flex flex-col items-center mb-12">
+                    <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">My recent
+                        <span class="text-primary-container">works</span>
+                    </h2>
+                    <!-- Filter Chips -->
+                    <div class="flex gap-4 mt-8 overflow-x-auto pb-4 max-w-full">
+
+                        <button onclick="filterProjects('all')"
+                            class="px-6 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md whitespace-nowrap shimmer-btn">
+                            All Projects
+                        </button>
+
+                        <button onclick="filterProjects('fullstack')"
+                            class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface border border-outline-variant hover:border-primary-container transition-colors whitespace-nowrap">
+                            Full Stack Systems
+                        </button>
+
+                        <button onclick="filterProjects('backend')"
+                            class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface border border-outline-variant hover:border-primary-container transition-colors whitespace-nowrap">
+                            Backend / APIs
+                        </button>
+
+                        <button onclick="filterProjects('ml')"
+                            class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface border border-outline-variant hover:border-primary-container transition-colors whitespace-nowrap">
+                            Machine Learning
+                        </button>
+
+                        <button onclick="filterProjects('web')"
+                            class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface border border-outline-variant hover:border-primary-container transition-colors whitespace-nowrap">
+                            Web / CMS
+                        </button>
+
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project 1 -->
+                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow">
+                        <div class="aspect-video relative overflow-hidden bg-surface-container-highest">
+                            <img src="thumbnails/oceanic.png"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <h3 class="font-headline-md text-on-surface">Oceanic Delights</h3>
+                            <p class="text-on-surface-variant text-body-md">
+                                Hybrid fish recommendation system using PHP + JS + cosine similarity.
+                            </p>
+                            <span class="text-primary-container text-sm">PHP • JavaScript • AI Logic</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="thumbnails/TopUp.png"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <h3 class="font-headline-md text-on-surface">Game TopUP</h3>
+                            <p class="text-on-surface-variant text-body-md">
+                                Game top-up platform built with PHP and dynamic cart system.
+                            </p>
+                            <span class="text-primary-container text-sm">PHP • MySQL • JS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="glass-panel rounded-2xl overflow-hidden group cursor-pointer hover-card-glow">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="thumbnails/gender_classification.png"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <h3 class="font-headline-md text-on-surface">Gender Classification</h3>
+                            <p class="text-on-surface-variant text-body-md">
+                                ML-based prediction system built using Python.
+                            </p>
+                            <span class="text-primary-container text-sm">Python • ML</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-section-gap fade-in-up scroll-section relative z-10" id="contact">
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                <div class="flex-1 space-y-8">
+                    <h2
+                        class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface leading-tight">
+                        Got a project in<br /><span class="text-primary-container">mind?</span>
+                    </h2>
+                    <!-- Stylized progress illustration -->
+                    <div class="relative w-full max-w-sm">
+                        <div class="flex items-end gap-4 h-48 border-b-2 border-outline-variant/30 pb-2 relative">
+                            <!-- Bar 1 -->
+                            <div class="w-16 bg-surface-container-highest h-1/3 rounded-t-sm relative">
+                                <div class="absolute -top-8 left-1/2 -translate-x-1/2 text-outline">
+                                    <span class="material-symbols-outlined rotate-45">arrow_upward</span>
+                                </div>
+                            </div>
+                            <!-- Bar 2 -->
+                            <div class="w-16 bg-primary-container/50 h-2/3 rounded-t-sm relative"></div>
+                            <!-- Bar 3 -->
+                            <div class="w-16 bg-primary-container h-full rounded-t-sm relative flex justify-center">
+                                <div class="absolute -top-16 text-primary-container animate-float">
+                                    <span class="material-symbols-outlined text-5xl">rocket_launch</span>
+                                </div>
+                            </div>
+                            <!-- Hand drawn arrow -->
+                            <svg class="absolute top-1/2 -left-12 w-24 h-24 text-outline opacity-50" fill="none"
+                                stroke="currentColor" stroke-width="2" viewbox="0 0 100 100">
+                                <path d="M10,10 Q50,90 90,50"></path>
+                                <path d="M80,45 L90,50 L85,60"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 w-full glass-panel rounded-3xl p-8 md:p-10 hover-card-glow">
+                    <form class="space-y-6" action="mailto:rajjwolsingh@gmail.com" method="post" enctype="text/plain">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="font-label-md text-label-md text-on-surface">Your name</label>
+                                <input
+                                    class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none transition-all"
+                                    placeholder="Name" type="text" required />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-md text-label-md text-on-surface">Your email</label>
+                                <input
+                                    class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none transition-all"
+                                    placeholder="Email" type="email" required />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label-md text-label-md text-on-surface">Your Message</label>
+                            <textarea
+                                class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none transition-all resize-none"
+                                placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button
+                            class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-md text-label-md hover:bg-primary transition-all duration-300 w-full sm:w-auto shimmer-btn"
+                            type="submit">
+                            Send Message <span class="material-symbols-outlined text-[18px]">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-section-gap bg-background dark:bg-background border-t border-outline-variant/20 flex flex-col items-center gap-unit-3 px-margin-mobile text-center">
+        <div class="flex gap-8 mb-6">
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors flex items-center gap-2"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">home</span> Home
+            </a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors flex items-center gap-2"
+                href="#about">
+                <span class="material-symbols-outlined text-[20px]">person</span> About me
+            </a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary-container transition-colors flex items-center gap-2"
+                href="#contact">
+                <span class="material-symbols-outlined text-[20px]">call</span> Contact
+            </a>
+        </div>
+        <div class="flex gap-4 mb-8">
+            <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-all"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">link</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-all"
+                href="#">
+                <span class="material-symbols-outlined text-[20px]">code</span>
+            </a>
+            <!-- GitHub -->
+            <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-all"
+                href="https://github.com/Rajjwol" target="_blank">
+                <i class="fa-brands fa-github text-[20px]"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-all"
+                href="https://linkedin.com/in/rajjwol-singh/" target="_blank">
+                <i class="fa-brands fa-linkedin-in text-[20px]"></i>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-all"
+                href="mailto:rajjwolsingh@gmail.com" target="_blank">
+                <span class="material-symbols-outlined text-[20px]">mail</span>
+            </a>
+        </div>
+        <div class="font-headline-sm text-on-surface mb-2 font-bold italic">Digital Architect</div>
+        <p class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
+            © 2024 Digital Architect • Built with Passion
         </p>
-      </div>
+        <p class="font-label-md text-[12px] text-outline mt-8">Terms of Service - Privacy Policy</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
 
-      <!-- Tools -->
-      <div class="skill-item">
-        <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-        <p>
-          <span class="programming"><i class="fab fa-git-alt"></i> Git</span>
-          <span class="programming"><i class="fab fa-github"></i> GitHub</span>
-          <span class="programming"><i class="fas fa-laptop-code"></i> Visual Studio</span>
-          <span class="programming"><i class="fas fa-code-branch"></i> VS Code</span>
-        </p>
-      </div>
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        // Optional: stop observing once it's visible to only animate once
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
 
-      <!-- Soft Skills -->
-      <div class="skill-item">
-        <h3><i class="fas fa-user-friends"></i> Soft Skills</h3>
-        <p>
-          <span class="programming"><i class="fas fa-lightbulb"></i> Problem-Solving</span>
-          <span class="programming"><i class="fas fa-users"></i> Team Collaboration</span>
-          <span class="programming"><i class="fas fa-sync-alt"></i> Adaptability</span>
-          <span class="programming"><i class="fas fa-graduation-cap"></i> Continuous Learning</span>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-  <!-- Call to Action -->
-  <section class="section call-to-action">
-    <h2>Actively Seeking Opportunities</h2>
-    <p>
-      I am currently searching for internships, freelance projects, or entry-level software developer roles where I
-      can
-      contribute my skills and grow professionally.
-      If you're looking for a passionate and eager-to-learn developer, let's connect!
-    </p>
-    <a href="mailto:rsm9841@gmail.com" class="button">Hire Me</a>
-    <a href="#footer" class="button">Contact Me</a>
-  </section>
-  <div class="back-home">
-    <a href="#hero" aria-label="Back to top">&#8593;</a>
-  </div>
-  <footer id="footer">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:rajjwolsingh@gmail.com" target="_blank"
-          rel="noopener noreferrer">rajjwolsingh@gmail.com</a>
-      </p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/rajjwol-singh/" target="_blank"
-          rel="noopener noreferrer">linkedin.com/in/rajjwol-singh</a></p>
-      <p>GitHub: <a href="https://github.com/Rajjwol" target="_blank" rel="noopener noreferrer">github.com/Rajjwol</a>
-      </p>
-    </div>
-  </footer>
+            document.querySelectorAll('.scroll-section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 
 </html>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navList = document.querySelector('.nav-list');
-
-  menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
-    menuToggle.classList.toggle('active');
-  });
-
-</script>>
